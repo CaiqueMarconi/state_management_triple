@@ -12,12 +12,14 @@ class HomeStore extends StreamStore<Exception, HomeState> {
 
   //metodo com setLoading
   Future<void> incrementCounter() async {
-    setLoading(true);
+    setLoading(
+        true); // inicia o metodo como loading assim é chamado o widget do onLoading no scopedBuilder
     await Future.delayed(
-      const Duration(seconds: 1),
+      const Duration(seconds: 1), // criado apenas para simular uma requisição
     );
     final value = state.counter + 1;
-    update(state.copyWith(counter: value));
-    setLoading(false);
+    update(state.copyWith(counter: value)); // atualiza variavel
+    setLoading(
+        false); // encerra o widget do onLoading e chama o widget do onState
   }
 }
