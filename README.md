@@ -4,7 +4,7 @@
 
 # Oque é gerenciamento de estado
 
-Gerenciamento de estado, ou State Management, se resume a obtenção de  dados para transformar  o estado da sua aplicação. Vou explicar melhor.
+```Gerenciamento de estado, ou State Management, se resume a obtenção de  dados para transformar  o estado da sua aplicação. Vou explicar melhor.
 
 O Flutter vai 'desenhar' a tela e vai tentar fazer isso apenas uma vez para economizar processamento. Para desenhar uma tela de listagem, por exemplo, você irá precisar de informações vindas de algum lugar, seja por api, firebase, entre outros, porém essas informações podem não ser estáticas. Se essas informações mudarem, o Flutter precisa ser notificado que houve uma mudança para poder redesenhar essa parte da tela.
 
@@ -122,3 +122,4 @@ no onState. exemplo abaixo de uso
 
 colocamos um setLoading como true quando queremos notificar o triple, para que ele use o widget de retorno no onLoading do
 ScopedBuilder e quando queremos que ele passe para o retorno do widget do onState apenas colocamo setLoading como false.
+```
